@@ -24,4 +24,9 @@ public class Demo2Controller {
         demoService.save(d);//保存数据.
         return"ok.Demo2Controller.save";
     }
+
+    @RequestMapping("/getById")
+    public Demo getById(long id){
+        return demoService.getById(id);
+    }
 }
