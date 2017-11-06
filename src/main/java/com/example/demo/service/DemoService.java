@@ -1,12 +1,11 @@
-package com.example.demo.Service;
+package com.example.demo.service;
 
-import com.example.demo.Entity.Demo;
-import com.example.demo.Repository.DemoDao;
-import com.example.demo.Repository.DemoRepository;
+import com.example.demo.entity.Demo;
+import com.example.demo.repository.DemoDao;
+import com.example.demo.repository.DemoRepository;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import javax.transaction.Transactional;
 
 /**
  * @author 郭朝彤

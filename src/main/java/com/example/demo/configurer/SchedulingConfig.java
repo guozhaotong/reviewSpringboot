@@ -1,8 +1,4 @@
-package com.example.demo.Configurer;
-
-import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
+package com.example.demo.configurer;
 
 /**
  * @author 郭朝彤

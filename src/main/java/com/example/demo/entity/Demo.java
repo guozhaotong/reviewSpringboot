@@ -1,6 +1,4 @@
-package com.example.demo.Entity;
-
-import com.alibaba.fastjson.annotation.JSONField;
+package com.example.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
