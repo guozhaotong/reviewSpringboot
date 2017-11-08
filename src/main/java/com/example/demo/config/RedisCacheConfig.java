@@ -41,7 +41,7 @@ public class RedisCacheConfig extends CachingConfigurerSupport {
      */
     @Bean
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
-        RedisTemplate<String,String>redisTemplate = new RedisTemplate<String, String>();
+        RedisTemplate<String,String> redisTemplate = new RedisTemplate<String, String>();
         redisTemplate.setConnectionFactory(factory);
 
         //key序列化方式;（不然会出现乱码;）,但是如果方法上有Long等非String类型的话，会报类型转换错误；
