@@ -60,20 +60,17 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- nekohtml让HTML可以不太严格的语法，搭配spring.thymeleaf.mode = LEGACYHTML5使用  -->
+        <!--发送邮件. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <!-- nekohtml让HTML可以不太严格的语法，搭配spring.thymeleaf.mode = LEGACYHTML5使用  -->
 		<dependency>
 			<groupId>net.sourceforge.nekohtml</groupId>
 			<artifactId>nekohtml</artifactId>
 			<version>1.9.22</version>
 		</dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-logging -->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-logging</artifactId>-->
-            <!--<version>1.5.8.RELEASE</version>-->
-        <!--</dependency>-->
-
         <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -84,9 +81,6 @@
 			<artifactId>druid</artifactId>
 			<version>1.1.5</version>
 		</dependency>
-
-
-
 		<!-- swagger2 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -98,6 +92,12 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.7.0</version>
 		</dependency>
+        <!--spring boot配置处理器 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
 	</dependencies>
 
 	<build>
@@ -105,13 +105,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!--<dependencies>-->
-					<!--<dependency>-->
-						<!--<groupId>org.springframework</groupId>-->
-						<!--<artifactId>springloaded</artifactId>-->
-						<!--<version>1.5.8.RELEASE</version>-->
-					<!--</dependency>-->
-				<!--</dependencies>-->
 			</plugin>
 		</plugins>
 	</build>
